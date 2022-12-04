@@ -266,6 +266,50 @@ koniec Strony w budowie*/
      color: var(--text-color);
  }
  
+/* footer */
+
+footer {
+	bottom: 0px;
+	width: 100%;
+	background: rgb(34, 34, 33);
+	color: whitesmoke;
+}
+.bottom center span {
+	color: #656565;
+
+}
+
+.bottom center span a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold ;
+}
+
+.bottom center span a:hover {
+	text-decoration: underline;
+}
+
+.bottom center span .code {
+	color: #3498db;
+}
+@media screen and (max-width: 900px) {
+	footer {
+		position: relative;
+		bottom: 0px;
+	}
+
+	.main-content {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
+	.main-content .box {
+		margin: 5px 0;
+	}
+}
+
+/* koniec footer'a */
+
  @media (max-width: 790px) {
      nav .nav-bar .sidebarOpen{
          display: block;
