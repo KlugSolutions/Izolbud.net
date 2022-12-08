@@ -307,7 +307,7 @@ body.dark .search-field i {
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content:space-between;
     }
 
     .logo-toggle .siderbarClose {
@@ -637,3 +637,11 @@ body.dark .right form .btn button:hover {
     color: #18191A;
 }
 
+/* -------------------OFERTA------------------ */
+body.dark .oferta{
+    color:#ccc;
+}
+main {
+    margin-top: 100px;
+    margin-left: 2em;
+}
