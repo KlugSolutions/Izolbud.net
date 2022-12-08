@@ -648,7 +648,10 @@ main {
 .oferta div { 
     position: relative;
     padding: 1em; 
-    width: 100%; height: 100%; padding: 0; margin: 0 }
+    width: 100%;
+    height: 100%; 
+    padding: 0; 
+    margin: 0; }
 
 #NW { top: 0;   left: 0;   right: 50%; bottom: 50% }
 #NE { top: 0;   left: 50%; right: 0;   bottom: 50% }
