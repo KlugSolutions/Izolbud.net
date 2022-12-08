@@ -41,7 +41,7 @@ koniec Strony w budowie*/
 /* ===== Colours ===== */
 :root {
     --body-color: #E4E9F7;
-    --nav-color: #4070F4;
+    --nav-color: #396997;
     --side-nav: #010718;
     --text-color: #FFF;
     --search-bar: #F2F2F2;
@@ -49,8 +49,10 @@ koniec Strony w budowie*/
 }
 
 body {
-    height: 900px;
     background-color: var(--body-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 body.dark {
@@ -103,6 +105,7 @@ nav .nav-bar .sidebarOpen {
     align-items: center;
     border-radius: 10%;
 }
+
 nav .nav-bar .logo a {
     font-size: 25px;
     font-weight: 500;
@@ -162,7 +165,7 @@ nav .nav-bar .logo a {
     width: 40px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
     margin: 0 5px;
 }
 
@@ -322,27 +325,48 @@ body.dark .search-field i {
         display: block;
         margin-top: 20px;
     }
+
 }
 
 /* ---------- Main ------------ */
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 100%;
 }
 
-h1, h2, h4, h5 {
+h1,
+h2,
+h4,
+h5 {
     text-align: center;
 }
+
+.home {
+    display: flex;
+    margin: 100px 20px 0px 20px;
+    justify-content: space-between;
+}
+
+.home .izolbud {
+    width: 50vw;
+}
+
+body.dark .izolbud {
+    color: #CCC;
+}
+
 
 /* ---------- Footer ---------- */
 
 footer {
+    margin-top: 100px;
     bottom: 0px;
     width: 100%;
+    background: #396997;
+    color: #FFF;
+}
+
+body.dark footer {
     background: rgba(36, 37, 38, 0.9);
     color: #CCC;
 }
@@ -360,10 +384,14 @@ footer {
     font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
-    color: #CCC;
+
 }
 
 .box span {
+    color: #FFF;
+}
+
+body.dark .box span {
     color: #CCC;
 }
 
@@ -378,7 +406,16 @@ footer {
     top: -10px;
     height: 2px;
     width: 100%;
-    background: #4070F4;
+    background: #18191A;
+}
+
+body.dark .box .content::before {
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #396997;
 }
 
 .box .content::after {
@@ -402,6 +439,19 @@ footer {
 .center .content .fa {
     font-size: 17px;
     font-weight: 400;
+    background: #1b5895;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+body.dark .center .content .fa {
+    font-size: 17px;
+    font-weight: 400;
     background: #18191A;
     height: 45px;
     width: 45px;
@@ -413,6 +463,10 @@ footer {
 }
 
 .center .content .fa:hover {
+    background: #242526;
+}
+
+body.dark .center .content .fa:hover {
     background: #4070F4;
 }
 
@@ -431,6 +485,12 @@ footer {
 .right form .text {
     font-size: 15px;
     margin-bottom: 2px;
+    color: #FFF;
+}
+
+body.dark .right form .text {
+    font-size: 15px;
+    margin-bottom: 2px;
     color: #CCC;
 }
 
@@ -442,16 +502,27 @@ footer {
 .right form textarea {
     width: 100%;
     font-size: 15px;
-    background: #18191A;
+    background: #1b5895;
+    border: #1b5895;
     padding-left: 10px;
-    border: 1px solid #222222;
     border-radius: 10px;
-    color: whitesmoke;
+    color: #FFF;
+}
+
+body.dark .right form input,
+body.dark .right form textarea {
+    width: 100%;
+    font-size: 15px;
+    background: #18191A;
+    border: #18191A;
+    padding-left: 10px;
+    border-radius: 10px;
+    color: #CCC;
 }
 
 .right form input:focus,
 .right form textarea:focus {
-    outline-color: #4070F4;
+    outline-color: #1b5895;
 }
 
 .right form input {
@@ -468,7 +539,8 @@ footer {
     border: none;
     border-radius: 10px;
     outline: none;
-    background: #CCC;
+    background: #1b5895;
+    color: #FFF;
     font-size: 15px;
     font-weight: 500;
     cursor: pointer;
@@ -476,6 +548,24 @@ footer {
 }
 
 .right form .btn button:hover {
+    background: #242526;
+}
+
+body.dark .right form .btn button {
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background: #18191A;
+    color: #CCC;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+
+body.dark .right form .btn button:hover {
     background: #4070F4;
 }
 
@@ -532,3 +622,18 @@ footer {
         font-size: 13px;
     }
 }
+
+/* -----------------DOKUMENTY-------------------- */
+
+.download {
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    margin-top: 100px;
+}
+
+.download a {
+    text-decoration: none;
+    color: #18191A;
+}
+
