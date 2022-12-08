@@ -645,3 +645,12 @@ main {
     margin-top: 100px;
     margin-left: 2em;
 }
+.oferta div { 
+    position: relative;
+    padding: 1em; 
+    border: 1px solid #000 }
+
+#NW { top: 0;   left: 0;   right: 50%; bottom: 50% }
+#NE { top: 0;   left: 50%; right: 0;   bottom: 50% }
+#SW { top: 50%; left: 0;   right: 50%; bottom: 0}
+#SE { top: 50%; left: 50%; right: 0;   bottom: 0}
