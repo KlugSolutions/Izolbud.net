@@ -1,30 +1,3 @@
-/* strona w budowie 
-.main {
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- border-radius: 10%;
- width: 500px;
- height: 500px;
- background: linear-gradient(50deg, black, blue);
-}
-
-h1 {
-    color: white;
-}
-
-h2 {
-    color: white;
-}
-
-a {
-    text-decoration: none;
-    color: lightskyblue;
-}
-
-koniec Strony w budowie*/
-
 /* ===== Google Font Import - Poppins ===== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
@@ -64,7 +37,7 @@ body.dark {
 }
 
 nav {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     height: 70px;
@@ -328,6 +301,51 @@ body.dark .search-field i {
 
 }
 
+/* ------------header--------------*/
+
+.bg-hero {
+    min-height: 100vh;
+	width: 100%;
+    background-image: linear-gradient(rgba(57,105,151, 0.7), rgba(0, 0, 0, 0.7)), url(../images/background2.jpg);
+    position: relative;
+    background-position: center;
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-box {
+	width: 90%;
+	color: whitesmoke;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.text-box h1 {
+	font-size: 60px;
+}
+
+.text-box p {
+	margin: 10px 0 40px;
+	font-size: 15px;
+	color: whitesmoke;
+	font-weight: bold;
+    font-style: italic;
+}
+
+.text-box hr {
+	width: 50%;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@media(max-width: 700px) {
+	.text-box h1 {
+		font-size: 40px;
+	}}
 /* ---------- Main ------------ */
 
 main {
@@ -636,4 +654,6 @@ body.dark .right form .btn button:hover {
     text-decoration: none;
     color: #18191A;
 }
+
+/* -------------------- SLIDER ---------------------- */
 
