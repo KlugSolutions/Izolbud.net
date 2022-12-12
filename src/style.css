@@ -260,7 +260,7 @@ body.dark .search-field i {
         position: fixed;
         height: 100%;
         width: 320px;
-        left: -100%;
+        right: -100%;
         top: 0;
         padding: 20px;
         background-color: var(--side-nav);
@@ -269,7 +269,7 @@ body.dark .search-field i {
     }
 
     nav.active .menu {
-        left: -0%;
+        right: -0%;
     }
 
     nav.active .nav-bar .navLogo a {
@@ -385,8 +385,6 @@ h5 {
 .home .izolbud {
     width: auto;
     padding: 15px;
-    border: 1px solid #1b5895;
-    border-radius: 10px;
     background-color: rgba(57, 105, 151, 0.1);
     margin-right: 10px;
 }
@@ -414,8 +412,6 @@ body.dark .izolbud {
 .image-container img {
     width: 300px;
     height: auto;
-    border: 1px solid #1b5895;
-    border-radius: 10px;
     margin-left: 10px;
 }
 
