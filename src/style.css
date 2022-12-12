@@ -751,6 +751,7 @@ body.dark table, body.dark a {
 .slider .container {
     width: 100%;
     padding: unset;
+<<<<<<< HEAD
 }
 
 /* -------------------- OFERTA -------------------- */
@@ -932,4 +933,6 @@ p.paragraph{
 .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet{
     margin: 5px 0;
     display: block;
+=======
+>>>>>>> 18c2c05449377ca98010d1a91e06c09c584ac0da
 }
