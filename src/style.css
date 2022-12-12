@@ -29,6 +29,7 @@ body {
 }
 
 body.dark {
+    background-color: #18191A;
     --body-color: #18191A;
     --nav-color: #242526;
     --side-nav: #242526;
@@ -44,6 +45,7 @@ nav {
     width: 100%;
     background-color: var(--nav-color);
     z-index: 100;
+    border: 1px solid #18191A;
 }
 
 body.dark nav {
@@ -305,47 +307,53 @@ body.dark .search-field i {
 
 .bg-hero {
     min-height: 100vh;
-	width: 100%;
-    background-image: linear-gradient(rgba(57,105,151, 0.7), rgba(0, 0, 0, 0.7)), url(../images/background2.jpg);
+    width: 100%;
+    background-image: linear-gradient(rgba(57, 105, 151, 0.7), rgba(0, 0, 0, 0.7)), url(../images/background2.jpg);
     position: relative;
     background-position: center;
-	background-size: cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 .text-box {
-	width: 90%;
-	color: whitesmoke;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .text-box h1 {
-	font-size: 60px;
+ 
+    font-size: 60px;
+    font-weight: 700;
 }
 
 .text-box p {
-	margin: 10px 0 40px;
-	font-size: 15px;
-	color: whitesmoke;
-	font-weight: bold;
+    margin: 10px 0 40px;
+    font-size: 15px;
+    color: whitesmoke;
+    font-weight: bold;
     font-style: italic;
 }
 
-.text-box hr {
-	width: 50%;
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.text-box hr{
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 0;
 }
 
+
 @media(max-width: 700px) {
-	.text-box h1 {
-		font-size: 40px;
-	}}
+    .text-box h1 {
+        font-size: 40px;
+    }
+}
+
 /* ---------- Main ------------ */
 
 main {
@@ -361,18 +369,78 @@ h5 {
 
 .home {
     display: flex;
-    margin: 100px 20px 0px 20px;
-    justify-content: space-between;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+.home h1 {
+    font-style: italic;
+    font-weight: 700;
+}
+
+.home p {
+    text-align: justify;
 }
 
 .home .izolbud {
-    width: 50vw;
+    width: auto;
+    padding: 15px;
+    border: 1px solid #1b5895;
+    border-radius: 10px;
+    background-color: rgba(57, 105, 151, 0.1);
+    margin-right: 10px;
+}
+
+.home hr {
+    border-top: 1px solid #1b5895;
+    
 }
 
 body.dark .izolbud {
     color: #CCC;
 }
 
+.home .izolbud img {
+    float: left;
+    margin: 10px;
+    max-width: 150px;
+}
+
+.izolbud {
+    width: 300px;
+    height: auto;
+}
+
+.image-container img {
+    width: 300px;
+    height: auto;
+    border: 1px solid #1b5895;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .home {
+        flex-direction: column;
+    }
+
+    .home .izolbud {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .image-container img {
+        margin-left: unset;
+    }
+
+    .image-container {
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}
 
 /* ---------- Footer ---------- */
 
@@ -547,11 +615,11 @@ body.dark .right form textarea {
     height: 35px;
 }
 
-.right form .btn {
+.right form .btnsend {
     margin-top: 10px;
 }
 
-.right form .btn button {
+.right form .btnsend button {
     height: 40px;
     width: 100%;
     border: none;
@@ -565,11 +633,11 @@ body.dark .right form textarea {
     transition: .3s;
 }
 
-.right form .btn button:hover {
+.right form .btnsend button:hover {
     background: #242526;
 }
 
-body.dark .right form .btn button {
+body.dark .right form .btnsend button {
     height: 40px;
     width: 100%;
     border: none;
@@ -583,8 +651,8 @@ body.dark .right form .btn button {
     transition: .3s;
 }
 
-body.dark .right form .btn button:hover {
-    background: #4070F4;
+body.dark .right form .btnsend button:hover {
+    background: #1b5895;
 }
 
 .bottom center {
@@ -645,15 +713,46 @@ body.dark .right form .btn button:hover {
 
 .download {
     display: flex;
-    flex-direction: column;
-    text-align: center; 
+    text-align: center;
     margin-top: 100px;
 }
+
 
 .download a {
     text-decoration: none;
     color: #18191A;
 }
 
+.download i .fa {
+    font-size: 50px;
+}
+
+table {
+    margin: 5px;
+}
+
+table,
+td {
+    border: 1px solid #1b5895;
+}
+
+td {
+    background-color: rgba(57, 105, 151, 0.1);
+}
+
+body.dark table, body.dark a {
+    color: #CCC;
+}
+
+@media screen and (max-width: 504px) {
+    .download {
+        flex-direction: column;
+    }
+}
+
 /* -------------------- SLIDER ---------------------- */
 
+.slider .container {
+    width: 100%;
+    padding: unset;
+}
